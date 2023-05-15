@@ -3,35 +3,27 @@
 <head>
 	<title>Login Sections</title>
 	<style>
-		/* Global Styles */
-
-		* {
-			box-sizing: border-box;
-		}
-
 		body {
 			background-color: #F1F1F1;
-			font-family: 'Open Sans', sans-serif;
+			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
 
-		h1, h2 {
+		h1 {
 			color: #333;
+			font-size: 36px;
+			margin-bottom: 20px;
 			text-align: center;
 			text-shadow: 2px 2px 0px #F1F1F1;
 		}
 
-		h1 {
-			font-size: 48px;
-			margin-top: 50px;
-			margin-bottom: 30px;
-		}
-
 		h2 {
-			font-size: 36px;
-			margin-top: 40px;
-			margin-bottom: 20px;
+			color: #333;
+			font-size: 24px;
+			margin-bottom: 10px;
+			text-align: center;
+			text-shadow: 1px 1px 0px #F1F1F1;
 		}
 
 		form {
@@ -45,17 +37,17 @@
 
 		label {
 			display: block;
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: bold;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 		}
 
 		input[type="text"], input[type="password"] {
 			border: 1px solid #CCCCCC;
 			border-radius: 5px;
-			font-size: 18px;
-			margin-bottom: 20px;
-			padding: 15px;
+			font-size: 16px;
+			margin-bottom: 10px;
+			padding: 10px;
 			width: 100%;
 		}
 
@@ -65,66 +57,58 @@
 			border-radius: 5px;
 			color: #FFFFFF;
 			cursor: pointer;
-			font-size: 20px;
-			padding: 15px;
-			transition: background-color 0.3s ease;
+			font-size: 16px;
+			padding: 10px;
 			width: 100%;
 		}
 
 		input[type="submit"]:hover {
 			background-color: #666;
 		}
-
-		/* Login Section Styles */
-
-		#login-sections {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin: 0 auto;
-			max-width: 1000px;
-		}
-
-		.login-section {
-			flex-basis: 400px;
-			margin: 20px;
-		}
-
-		.login-section h2 {
-			text-shadow: 1px 1px 0px #F1F1F1;
-		}
-
-		.login-section form {
-			transition: box-shadow 0.3s ease;
-		}
-
-		.login-section form:hover {
-			box-shadow: 0px 4px 4px #CCCCCC;
-		}
-
-		@media screen and (max-width: 768px) {
-			.login-section {
-				flex-basis: 100%;
-			}
-		}
-
 	</style>
 </head>
 <body>
 	<h1>Login Sections</h1>
 
-	<div id="login-sections">
-		<div class="login-section">
-			<h2>Login Section 1</h2>
-			<form>
-				<label for="username1">Username:</label>
-				<input type="text" id="username1" name="username1">
+	<h2>Login Section 1</h2>
+	<form>
+		<label for="username1">Username:</label>
+		<input type="text" id="username1" name="username1">
 
-				<label for="password1">Password:</label>
-				<input type="password" id="password1" name="password1">
+		<label for="password1">Password:</label>
+		<input type="password" id="password1" name="password1">
 
-				<input type="submit" value="Submit">
-			</form>
-		</div>
+		<input type="submit" value="Submit">
+	</form>
 
-	
+	<h2>Login Section 2</h2>
+	<form>
+		<label for="username2">Username:</label>
+		<input type="text" id="username2" name="username2">
+
+		<label for="password2">Password:</label>
+		<input type="password" id="password2" name="password2">
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Login Section 3</h2>
+	<form>
+		<label for="username3">Username:</label>
+		<input type="text" id="username3" name="username3">
+
+		<label for="password3">Password:</label>
+		<input type="password" id="password3" name="password3">
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Login Section 4</h2>
+	<form>
+		<label for="username4">Username:</label>
+		<input type="text" id="username4" name="username4">
+
+		<label for="password4">Password:</label>
+		<input type="password" id="password4" name="password4">
+		<input type="submit" value="Submit">
+	</form>
