@@ -1,116 +1,152 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>mini project</title>
-	<style>
-		body {
-			background-color: #ffffff;
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
+<head> 
+ </head>
+ <style>
+/*Styling for cards*/
 
-		h1 {
-			color: #047200;
-			font-size: 36px;
-			margin-bottom: 20px;
-			text-align: center;
-			text-shadow: 1px 1px 1px #F1F1F1;
-		}
+body {
+  font-family: "Raleway", sans-serif;
+  background: #eee;
+}
+h1 {
+  color: #111;
+  text-align: center;
+  margin-top: 35px;
+  letter-spacing: 2px;
+}
 
-		h2 {
-			color: #FFFFFF;
-			font-size: 24px;
-			margin-bottom: 10px;
-			text-align: center;
-			text-shadow: 0px 1px 0px #F1F1F1;
-		}
+h2 {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-shadow: 0px 0px 5px #222222;
+  color: #eee;
+  letter-spacing: 2px;
+}
 
-		form {
-			background-color: #FFFFFF;
-			border-radius: 5px;
-			box-shadow: 0px 1px 1px #CCCCCC;
-			margin: 25px auto;
-			max-width: 450px;
-			padding: 20px;
-		}
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
 
-		label {
-			display: block;
-			font-size: 16px;
-			font-weight: bold;
-			margin-bottom: 5px;
-			text-shadow: 1px 1px 0px #F1F1F1;
-		}
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s all ease;
+  transform: rotateX(60deg) scale(0.7);
+   box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
 
-		input[type="text"], input[type="password"] {
-			border: 1px solid #CCCCCC;
-			border-radius: 5px;
-			font-size: 16px;
-			margin-bottom: 10px;
-			padding: 10px;
-			width: 95%;
-		}
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+  perspective: 900;
+  z-index: 99;
+}
 
-		input[type="submit"] {
-			background-color: #333;
-			border: none;
-			border-radius: 5px;
-			color: #FFFFFF;
-			cursor: pointer;
-			font-size: 16px;
-			padding: 10px;
-			width: 100%;
-		}
+#card1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  z-index: 0;
+  left: -150%;
+}
 
-		input[type="submit"]:hover {
-			background-color: #666;
-		}
-	</style>
-</head>
-<body background="cool-background (1).png">
-	<h1><u><i><font face="impact" bgcolor="green">Login Sections</font></i></u></h1><hr>
-	<h2><marquee direction="left" scrollamount="10" width="35%">Managment Login</marquee></h2>
-	<form>
-		<label for="username1">Username:</label>
-		<input placeholder="Enter User Id" type="text" id="username1" name="username1">
+#card2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: -47%;
+  z-index: 0;
+}
 
-		<label for="password1">Password:</label>
-		<input placeholder="Enter Password" type="password" id="password1" name="password1">
+#card3 {
+  left: 42%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
 
-		<input type="submit" value="Submit">
-		
-	</form><hr>
+#card4 {
+  z-index: 0;
+  left: 145%;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
 
-	<h2><marquee direction="right" scrollamount="10"  width="35%"><b>Student's Login</b></marquee></h2>
-	<form>
-		<label for="username2">Username:</label>
-		<input placeholder="Enter User Id" type="text" id="username2" name="username2">
+button{
+	height: 40px;
+	width: 200px;
+	margin-top: 20px;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: #3287fc;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	border:none;
+	transition: all .5s ease-in-out; 
+}
+button:hover{
+	background-color: #8232cc;
+}
+input {
+      width: 90%;
+      background: #bdc3c7;
+      border: none;
+      height: 30px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 15px;
+      color: #313131;
+}
+input:focus{
+  outline: none;
+}
+ </style>
+<body>
+<h1> mini project </h1>
+<div class="wrapper">
+	<div class="container" id="card1">
+    <div class="login">
+      <h2><u>Admin Login</u></h2>
+      <center><input type="text" placeholder="Enter Username" class="my"></center>
+      <center><input type="password" placeholder="Enter Password" class="my"></center>
+      <center><button class="my login-btn">Login</button></center>
+  </div>
+	</div>
 
-		<label for="password2">Password:</label>
-		<input placeholder="Enter Password" type="password" id="password2" name="password2">
-
-		<input type="submit" value="Submit">
-	</form><hr>
-
-	<h2><marquee direction="left" scrollamount="10"  width="35%">Parent's Login</marquee></h2>
-	<form>
-		<label for="username3">Username:</label>
-		<input placeholder="Enter User Id" placeholder="Enter User Id" type="text" id="username3" name="username3">
-
-		<label for="password3">Password:</label>
-		<input placeholder="Enter Password" type="password" id="password3" name="password3">
-
-		<input type="submit" value="Submit">
-	</form><hr>
-
-	<h2><marquee direction="right"  width="35%" scrollamount="10"><b>Alumni's Login</b></marquee></h2>
-	<form>
-		<label for="username4">Username:</label>
-		<input placeholder="Enter User Id" type="text" id="username4" name="username4">
-
-		<label for="password4">Password:</label>
-		<input placeholder="Enter Password" type="password" id="password4" name="password4">
-		<input type="submit" value="Submit">
-	</form>
-	<hr>
+	<div class="container" id="card2">
+    <div class="login">
+      <h2><u>Student Login</u></h2>
+      <center><input type="text" placeholder="Enter Username" class="my"></center>
+      <center><input type="password" placeholder="Enter Password" class="my"></center>
+      <center><button class="my login-btn">Login</button></center>
+  </div>
+	</div>
+	<div class="container" id="card3">
+      <div class="login">
+        <h2><u>Parent Login</u></h2>
+        <center><input type="text" placeholder="Enter Username" class="my"></center>
+        <center><input type="password" placeholder="Enter Password" class="my"></center>
+        <center><button class="my login-btn">Login</button></center>
+		</div>
+	</div>
+	<div class="container" id="card4">
+    <div class="login">
+      <h2><u>Alumni Login</u></h2>
+      <center><input type="text" placeholder="Enter Username" class="my"></center>
+      <center><input type="password" placeholder="Enter Password" class="my"></center>
+      <center><button class="my login-btn">Login</button></center>
+  </div>
+	</div>
+</div>
+</body>
+</html>
