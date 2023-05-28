@@ -7,7 +7,11 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background: #eee;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 h1 {
   color: #111;
@@ -98,20 +102,20 @@ button:hover{
 }
 input {
       width: 90%;
-      background: #bdc3c7;
+      background: #bdc3c78c;
       border: none;
       height: 30px;
       margin-bottom: 40px;
-      border-radius: 5px;
+      border-radius: 8px;
       text-align: center;
-      font-size: 15px;
-      color: #313131;
+      font-size: 25px;
+      color: #141414;
 }
 input:focus{
   outline: none;
 }
  </style>
-<body>
+<body background="cool-background (1).png">
 <h1> mini project </h1>
 <div class="wrapper">
 	<div class="container" id="card1">
