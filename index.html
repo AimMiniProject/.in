@@ -38,10 +38,38 @@
             </div>
         </div>
         <script>
-             var loader= document.getElementById("preloader");
-            window.addEventListener("load", function(){
-                loader.style.display= "none";
-            });
+            var loader = document.getElementById("preloader");
+            var startTime = new Date().getTime();
+            var pageLoaded = false;
+    
+            // Function to hide the preloader
+            function hidePreloader() {
+                loader.style.visibility = "hidden";
+                // Optionally, you can add a class to the body element to prevent interaction during loading
+                // document.body.classList.remove("loading");
+            }
+    
+            // Function to handle when the page is fully loaded
+            function onPageLoaded() {
+                pageLoaded = true;
+                var currentTime = new Date().getTime();
+                var timeDiff = currentTime - startTime;
+                var minDisplayTime = 1000; // 1 seconds
+                var remainingTime = minDisplayTime - timeDiff;
+    
+                // Wait for at least 1 seconds before hiding the preloader
+                if (remainingTime <= 0) {
+                    hidePreloader();
+                } else {
+                    setTimeout(hidePreloader, remainingTime);
+                }
+            }
+    
+            // Hide the preloader after 1 seconds (minimum display time)
+            setTimeout(hidePreloader, 1000);
+    
+            // Check if the page is fully loaded, and if so, hide the preloader
+            window.addEventListener("load", onPageLoaded);
         </script>
     </body>
 </html>
