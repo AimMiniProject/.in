@@ -343,7 +343,7 @@ span {
                 pageLoaded = true;
                 var currentTime = new Date().getTime();
                 var timeDiff = currentTime - startTime;
-                var minDisplayTime = 300; // 1 seconds
+                var minDisplayTime = 2000; // 1 seconds
                 var remainingTime = minDisplayTime - timeDiff;
     
                 // Wait for at least 1 seconds before hiding the preloader
@@ -355,7 +355,7 @@ span {
             }
     
             // Hide the preloader after 1 seconds (minimum display time)
-            setTimeout(hidePreloader, 300);
+            setTimeout(hidePreloader, 2000);
     
             // Check if the page is fully loaded, and if so, hide the preloader
             window.addEventListener("load", onPageLoaded);
