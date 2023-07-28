@@ -12,7 +12,7 @@
             </div>
             <div class="content">
                 <big>Welcome To The</big>
-                <h1>Vasavi Engineering College<br>Feedback Portal</h1>
+                <h1>Vasavi Engineering College<br>Feedback Web Portal</h1>
                 <button type="button" onclick = "window.location.href='loginpage/loginpage.html';">click here for login portal</button>
             </div>
             <div class="side-bar">
@@ -54,7 +54,7 @@
                 pageLoaded = true;
                 var currentTime = new Date().getTime();
                 var timeDiff = currentTime - startTime;
-                var minDisplayTime = 400; // 1 seconds
+                var minDisplayTime = 800; // 1 seconds
                 var remainingTime = minDisplayTime - timeDiff;
     
                 // Wait for at least 1 seconds before hiding the preloader
@@ -66,7 +66,7 @@
             }
     
             // Hide the preloader after 1 seconds (minimum display time)
-            setTimeout(hidePreloader, 400);
+            setTimeout(hidePreloader, 800);
     
             // Check if the page is fully loaded, and if so, hide the preloader
             window.addEventListener("load", onPageLoaded);
