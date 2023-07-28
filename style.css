@@ -12,12 +12,12 @@
     overflow: hidden;
 }
 .logo{
-       
-    width: 5px;
+    
+    width: 60px;
     cursor: pointer;
     border: 1px solid #0000005e;
     border-radius: 20px;
-    padding: 5px;
+    padding: 2px;
 }
 .navbar{
     width: 85%;
