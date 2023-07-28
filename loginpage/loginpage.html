@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MINI PROJECT</title>
+</head>
+
+<style>
+	/*stylng for main page*/
+*{
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 510vh;
+	font-family: 'Poppins', sans-serif;
+}
+.main {
+	width: 400%;
+	height: 100%;
+	display: flex;
+}
+header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	font-size: 1rem;
+	z-index: 1;
+	background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34, 0.4), transparent);
+}
+header ul {
+	width: 100%;
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+}
+header ul li {
+	margin: 0 1em;
+	padding: 1em;
+}
+header ul li a {
+	position: relative;
+	color: #f4f4f4;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header ul li a::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 3px;
+	transition: all 0.2s linear;
+
+}
+header ul li a:hover::after {
+	width: 100%;
+	background-color: #ff0000;
+}
+
+section {
+	position: relative;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	background-image: url("img1.jpg");
+	background-size: cover;
+	
+}
+section:nth-child(2) {
+	align-items: center;
+  	background-image: url("img2.jpg");
+}
+section:nth-child(3) {
+	align-items: center;
+	background-image: url("img1.jpg");
+}
+section:nth-child(4) {
+	position: sticky;
+	align-items: center;
+	background-image: url("img2.jpg");
+}
+
+/*Styling for cards*/
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #3586ff;; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+h1 {
+  color: #111;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+text { color: #000000;
+	text-align: center;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 2px #4da7c2b7;
+  padding: 1em;
+}
+p { color: #ffffff;
+	text-align: center;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 2px #353535b7;
+  padding: 1em;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  text-shadow: 0px 0px 5px #222222;
+  color: #eee;
+  letter-spacing: 2px;
+}
+.wrapper {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  width: 300px;
+  height: 450px;
+  perspective: 900px;
+}
+.m {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  text-shadow: 0px 0px 2px #57575794;
+  color: #030120;
+}
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s all ease;
+  transform: rotateX(60deg) scale(0.7);
+   box-shadow: 0px 20px 50px #7c7a7a;
+  animation: entry 1s linear 1;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+  perspective: 900;
+  z-index: 99;
+}
+
+#card1 {
+  background: linear-gradient(to bottom, #000000 30%, #ff1b1b 100%);
+  z-index: 0;
+  left: -150%;
+}
+
+#card2 {
+  background: linear-gradient(to bottom, #000000 30%, #304fff 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: -47%;
+  z-index: 0;
+}
+
+#card3 {
+  left: 42%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #000000 30%, #2ef13e 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+#card4 {
+  z-index: 0;
+  left: 145%;
+  background: linear-gradient(to bottom, #000000 30%, #f1dc1c 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+button{
+	height: 40px;
+	width: 200px;
+	margin-top: 20px;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: #3287fc;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	border:none;
+	transition: all .5s ease-in-out; 
+}
+button:hover{
+	background-color: #8232cc;
+}
+input {
+      width: 90%;
+      background: #bdc3c78c;
+      border: none;
+      height: 30px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 20px;
+      color: #141414;
+}
+input:focus{
+  outline: none;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.527);
+  opacity: 90;}
+span {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      top: -40px;
+      height: 80px;
+      width: 80px;
+	  background: url('iconuser.jpg') center center no-repeat, #000000;
+      border-radius: 50%;
+      box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    }
+/*footer styling*/
+
+
+</style>
+<body>
+<header>
+	<ul>
+		<li> <a href="#pg1">Home</a> </li>
+		<li> <a href="#pg2">Nothing</a> </li>
+		<li> <a href="#pg3">About</a> </li>
+		<li> <a href="#pg4">Contact_Us</a> </li>
+	</ul>
+</header>
+
+<div class="main">
+<section id="pg1">
+	<div class="m">	<marquee scrollamount="15"><font size="5"><b><u><h4>Welcome To Sri Vasavi Engineering College FeedBack Web Portal<h4></u></b></font></marquee>
+	</div>
+	  <div class="wrapper">
+		  <div class="container" id="card1">
+		  <div class="login">
+			<span></span>
+			<h2><u>Admin Login</u></h2>
+			<center><input type="text" placeholder="Enter Username" class="my"></center>
+			<center><input type="password" placeholder="Enter Password" class="my"></center>
+			<center><button class="my login-btn">Login</button></center>
+		</div>
+		  </div>
+	  
+		  <div class="container" id="card2">
+		  <div class="login">
+			<span></span>
+			<h2><u>Student Login</u></h2>
+			<center><input type="text" placeholder="Enter Username" class="my"></center>
+			<center><input type="password" placeholder="Enter Password" class="my"></center>
+			<center><button class="my login-btn">Login</button></center>
+		</div>
+		  </div>
+		  <div class="container" id="card3">
+			<div class="login">
+			  <span></span>
+			  <h2><u>Parent Login</u></h2>
+			  <center><input type="text" placeholder="Enter Username" class="my"></center>
+			  <center><input type="password" placeholder="Enter Password" class="my"></center>
+			  <center><button class="my login-btn">Login</button></center>
+			  </div>
+		  </div>
+		  <div class="container" id="card4">
+		  <div class="login">
+			<span></span>
+			<h2><u>Alumni Login</u></h2>
+			<center><input type="text" placeholder="Enter Username" class="my"></center>
+			<center><input type="password" placeholder="Enter Password" class="my"></center>
+			<center><button class="my login-btn">Login</button></center>
+		</div>
+		  </div>
+
+</section>
+
+<section id="pg2" >
+	<hr>
+</section>
+<section id="pg3">
+	<div class="m">	<marquee scrollamount="15"><font size="5"><u><h4>Sri Vasavi Engineering College Pedatadepalli,Tadepalligudem - 534 101,<h4></u></font></marquee></div>
+<text><b>
+	"Sri Vasavi Engineering College", considered one of the best engineering colleges in Andhra Pradesh, started its journey in the year 2001. Since its inception, the college has been striving to provide quality technical education to its students and making them industry ready. Sri Vasavi Engineering College exemplifies quality in various fields ranging from Engineering, Pharmacy to Business Administration courses and is rated as one among the top 10 engineering colleges in Andhra Pradesh. The world class laboratories, the mammoth library which radiates knowledge, audio visual classrooms with plug and play ambience, state-of-the art sports complex, Indoor stadium, seminar halls, auditorium, lawns and gardens and parking facilities make Sri Vasavi stand out among the multitude of engineering colleges in the state today.Highly qualified Faculty always contributes to the knowledge levels of students and facilitate their placement in top most MNCs every year. NBA & NAAC accreditations bear testimony to top notch facilities available in the campus.SVEC became an autonomous engineering college in 2018 and is fine tuning its course curricula to suit the ever growing industry needs.SVEC started new engineering courses CST and ECT which are highly prospective in the present job scenario besides offering the best engineering courses like ECE, CSE, EEE, Mechanical and Civil. The college has an MBA wing which always strives to transform students into entrepreneurs.The MBA wing functions like one of the best MBA colleges in A.P by infusing the students with requisite business skills. The placements division always strives hard to entice prime global and Multi-national companies to visit the SVEC campus for conducting placement drives. The NSS unit helps students to inculcate discipline and civic sense among themselves to make them responsible citizens of this nation.Research and Development activities in the college represent a large and rapidly growing effort put forth by the stakeholders which creates new and improved technology that surely gives an edge over. The Eco-Friendly projects undertaken by the college started producing results in the form of awards and accolades.The RTA approved pollution checkup center, Power generation using solar panels, Battery Vehicles designed by students, Technical exhibitions and trade shows will surely give students a practical exposure in the campus itself.</b></text>
+</section>
+
+<section id="pg4">
+	<p><b><U>CONTACT DETAILS</U></br></br>Sri Vasavi Engineering College Pedatadepalli,Tadepalligudem - 534 101,</br>West Godavari Dist., Andhra Pradesh.</br>Phone No's.: +91-8818-284355,284344, 284544,</br>Fax No.: +91-8818-284322</br>Email : principal@srivasaviengg.ac.in</b></p>
+</section>
+</div>
+  </div>
+</body>
+</html>
