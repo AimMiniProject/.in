@@ -144,14 +144,4 @@ h1{
     width: 100%;
     position: fixed;
     z-index: 100;
-    opacity: 1;
-    animation: fadeOut 1s ease forwards;
-}
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
 }
