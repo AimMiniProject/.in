@@ -12,12 +12,13 @@
     overflow: hidden;
 }
 .logo{
+    
     width: 60px;
     cursor: pointer;
     border: 1px solid #0000005e;
     border-radius: 20px;
     padding: 2px;
- transition: 3.5s;
+    transition: 3.5s;
 }
 .logo:hover{
     transform: scale(1.3);
