@@ -141,6 +141,15 @@ h1{
     animation-delay: 3.5s;
     width: 40px;
 }
+.image-box img{
+    width: 600px;
+    display: block;
+}
+.image-box{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
 #preloader {
     /* Center the preloader on the page */
     position: fixed;
