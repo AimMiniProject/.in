@@ -28,13 +28,19 @@
     justify-content: space-between;
 }
 button{
-    color: #fbfcfd;
+    color: #ffffff;
     padding: 10px 25px;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    font-weight: bold;
+    transition: all .5s ease-in-out; 
+}
+
+button:hover{
+	background-color: #1100ffb6;
 }
 .content{
     color: #fbfcfd;
