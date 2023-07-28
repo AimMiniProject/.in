@@ -148,13 +148,21 @@ h1{
     width: 40px;
 }
 .image-box img{
-    width: 600px;
+    width: 550px;
     display: block;
+    filter:hue-rotate(.4)
+    transition: .5s;
+}
+.image-box:hover {
+    filter: grayscale(0);
+    transform: scale(0.8) rotate(360deg);
 }
 .image-box{
     position: absolute;
     bottom: 0;
     right: 10%;
+    overflow: hidden;
+    transition: 3s;
 }
 #preloader {
     /* Center the preloader on the page */
