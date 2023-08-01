@@ -23,6 +23,9 @@
 .logo:hover{
     transform: scale(1.3);
 }
+.thetitle{
+    padding: 2px;
+}
 .navbar{
     width: 85%;
     height: 15%;
