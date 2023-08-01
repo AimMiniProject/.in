@@ -24,7 +24,11 @@
     transform: scale(1.3);
 }
 .thetitle{
+    text-align: left;
+    color: #ffffff;
     padding: 2px;
+    position: fixed;
+    left: 180px;
 }
 .navbar{
     width: 85%;
@@ -213,5 +217,4 @@ h3:hover{
     background-position: center;
     background-size: 30%; /* Adjust the size of the preloader image */
 }
-
 
