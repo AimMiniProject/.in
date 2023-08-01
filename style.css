@@ -54,6 +54,7 @@ button:hover{
     transform: scale(1.1);
 }
 .content{
+	
     color: #fbfcfd;
     position: absolute;
     top: 50%;
@@ -65,12 +66,14 @@ h1:hover{
     transform: scale(1.1);
 }
 h1{
+	   cursor: pointer;
     font-size: 40px;
     margin: 5px 0 30px;
     line-height: 55px;
     transition: 3.5s;
 }
 h3{
+	   cursor: pointer;
     font-size:25px;
     transition: 3.5s;
 }
@@ -144,26 +147,26 @@ h3:hover{
 }
 .bubbles img:nth-child(1){
     animation-delay: 2s;
-    width: 45px;
+    width: 44px;
 }
 .bubbles img:nth-child(2){
     animation-delay: 4.5s;
 }
 .bubbles img:nth-child(3){
     animation-delay: 6s;
-    width: 35px;
+    width: 36px;
 }
 .bubbles img:nth-child(4){
     animation-delay: 2.5s;
-    width: 20px;
+    width: 22px;
 }
 .bubbles img:nth-child(5){
     animation-delay: 1.5s;
-    width: 50px;
+    width: 48px;
 }
 .bubbles img:nth-child(6){
     animation-delay: 7.5s;
-    width: 75px;
+    width: 73px;
 }
 .bubbles img:nth-child(7){
     animation-delay: 3.5s;
