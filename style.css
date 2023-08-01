@@ -197,7 +197,7 @@ h3:hover{
     bottom: 0;
     right: 10%;
     overflow: hidden;
-    transition: 3.5s;
+    transition: 3s;
 #preloader {
     /* Center the preloader on the page */
     position: fixed;
